@@ -4,17 +4,6 @@ import { TodoList } from './TodoList';
 import { TodoAdd } from './TodoAdd';
 import { useTodo } from '../hooks';
 
-// const initialState =[
-//   // {
-//   //   id: new Date().getTime(),
-//   //   description: 'Recolectar la piedra del alma',
-//   //   done: false
-//   // }
-// ]
-// const init = () =>{
-//    return JSON.parse(localStorage.getItem('todos')) || [];
-// }
-
 export const TodoApp = () => {
 
   const {todos,TodosCount, pendingTodosCount,  handleNewTodo, handleDeleteTodo, handleToggleTodo } = useTodo();
